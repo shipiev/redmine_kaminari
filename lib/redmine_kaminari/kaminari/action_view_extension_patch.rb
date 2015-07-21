@@ -14,10 +14,7 @@ module RedmineKaminari::Kaminari::ActionViewExtensionPatch
               if n == scope.limit_value
                 content_tag('span', n.to_s)
               else
-                link_to n.to_s,
-                content_tag('a', href: url_for(per_page: n, options[:param_name] => nil)) do
-                  n.to_s
-                end
+                link_to(n, url_for(per_page: n, options[:param_name] => nil), remote: options[:remote]).html_safe
               end
             end
 
