@@ -1,0 +1,3 @@
+module RedmineKaminari::Kaminari
+  # Your code goes here...
+end
