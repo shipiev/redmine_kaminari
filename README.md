@@ -1,6 +1,6 @@
 # RedmineKaminari
 
-Kaminari pagination is adapted for Redmine. Now "Paginator.new" is in the past!
+Kaminari pagination adapted for Redmine. Now, "Paginator.new" in the past!
 
 ## Installation
 
