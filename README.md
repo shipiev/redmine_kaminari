@@ -27,9 +27,9 @@ Or install it yourself as:
       end
     end
 
-    #view
+    #view (haml)
 
-    %p.pagination
+    %span.pagination
         = paginate @collection
 
 ## Contributing
