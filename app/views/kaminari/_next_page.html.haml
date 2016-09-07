@@ -5,5 +5,10 @@
 -#    total_pages:   total number of pages
 -#    per_page:      number of items to fetch per page
 -#    remote:        data-remote
-%span.next
-  = link_to_unless current_page.last?,  "#{l(:label_next)} &raquo;".html_safe, url, rel: 'next', remote: remote
+- if current_page.last?
+  %li.next
+    %span
+      = "#{l(:label_next)} &raquo;".html_safe
+- else
+  %li.next.page
+    = link_to "#{l(:label_next)} &raquo;".html_safe, url, rel: 'next', remote: remote, accesskey: 'n'
